@@ -1,0 +1,25 @@
+Fonte: https://software.com.br/p/sqldbx-professional
+
+Descrição detalhada do produto
+SqlDbx Professional é uma solução ágil e fácil de usar, de desenvolvimento IDE para administradores de banco de dados e desenvolvedores de aplicativos ou de banco de dados SQL, que trabalham em ambientes heterogêneos de servidores de Banco de Dados.
+
+SqlDbx Professional Edition permite acesso simultâneo a diversos servidores de banco de dados e é construído em torno de um Editor de SQL avançado e do Pesquisador de Objetos de Banco de Dados. SqlDbx fornece uma interface de usuário consistente entre diferentes sistemas DBMS.
+
+A interface intuitiva e direta permite que os desenvolvedores possam melhorar a sua produtividade por ter fácil acesso aos recursos mais usados. Executar consultas, executar scripts e procurar objetos de banco sem deixar a janela do editor. SqlDbx é um arquivo executável autônomo, de forma que nenhuma instalação é necessária. Além disso, SqlDbx não instala ou modifica nada no computador do usuário.
+
+Principais funcionalidades:
+
+- Suporte nativo de alto desempenho para servidores de banco de dados importantes, incluindo Microsoft, Sybase ASE, Oracle e IBM DB2/UDB;
+- Browse/Explorar Servidores;
+- Intellisense rápido, inteligente, extenso e altamente personalizável;
+- Editor de script avançado com destaque de sintaxe, Auto Completar, Digitação rápida, Variáveis Script, Drag/Drop, Modo de Coluna (Bloco)
+- Realce automaticamente, etc;
+- Suporte total a Unicode;
+- versões x86 e x64;
+- Esquema visual e de dados Diff, Arquivo Diff, rápida Diff;
+- SQL Object Scripting;
+- SQL Formatter / Beautifier;
+- Gerar SELECT, INSERT, UPDATE, DELETE, CREATE, WHERE em instruções de modificação de dados diretamente do Result Grid;
+- Modelos de SQL com suporte para parâmetros formais;
+- Consultas parametrizadas e variáveis de substituição;
+- Importar/Exportar para CSV, XML, Excel, e muito mais!
