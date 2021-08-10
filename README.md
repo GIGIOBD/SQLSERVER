@@ -8,7 +8,7 @@ Este repositório era até então de uso pessoal e resolvi deixar público este 
   <a href="https://github.com/GIGIOBD/SQLSERVER">
   <img align="center" height="200em" src="https://github-readme-stats.vercel.app/api?username=tbdsumare&show_icons=true&theme=dark&include_all_commits=true&count_private=true"/>
    
-  <img align="center"  height="150" width="160" src="https://github.com/GIGIOBD/SQLSERVER/blob/main/sql-server.png">      
+  <img align="center"  height="150" width="160" src="https://github.com/GIGIOBD/SQLSERVER/blob/main/github/icon/sql-server.png">      
  
 </div>
   
