@@ -1,0 +1,63 @@
+if object_id('dbo.matricula ','u') is not null
+begin
+	drop table dbo.matricula 
+end
+
+create table dbo.matricula 
+(
+	id				int,
+	dt_matricula	smalldatetime
+)
+
+
+set dateformat YMD
+DECLARE 
+	@contador int = 1,
+	@Random INT,
+	@Random2 INT,
+	@data_saldo smalldatetime,
+	@Upper INT,
+	@Lower INT,
+	@id_chave BIGINT
+
+SET @Lower = 1
+SET @Upper = 20
+
+while @contador <= 50
+begin
+	SELECT @Random		= ROUND(((@Upper - @Lower -1) * RAND() + @Lower), 0)
+	SELECT @Random2		= ROUND(((6 - @Lower -1) * RAND() + @Lower), 0)
+	SELECT @id_chave	= ROUND(((3000 - @Lower -1) * RAND() + @Lower), 0)
+
+	SELECT  
+		@data_saldo =
+			convert(varchar(10),
+				convert(varchar(4),ROUND(((2020 - 2013 -1) * RAND() + 2013), 0)) +							--ano aleatorio
+				right(replicate('0',2) + convert(varchar(2),ROUND(((1 - 12 -1) * RAND() + 12), 0)),2 ) +	--mes aleatorio	
+				right(replicate('0',2) + convert(varchar(2),ROUND(((2 - 28 -1) * RAND() + 28), 0)),2 )		--dia mes aleatorio
+			,103)
+
+	insert into matricula 
+	SELECT 
+		id_tp_saldo = @Random,		
+		dt_saldo = @data_saldo
+		
+
+	set @contador = @contador + 1
+end
+
+
+/* Verifica a matricula com as datas */ 
+select	
+	id,
+	dt_matricula
+from matricula where id = 12
+order by dt_matricula desc
+
+/* Dados agrupados por ID(Matricula) */
+select 
+	id,					--codigo matricula
+ max(dt_matricula) ,	--Max maior valor da coluna especificada
+ count(id)				--qunatidade de registros por matricula
+from matricula
+group by id
