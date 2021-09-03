@@ -1,0 +1,7 @@
+sqlcmd /? - ssms em linha  de comando.
+
+dtexec /? - pacotes do ssis etl.
+
+bcp /? - Importação e exportação de arquivos texto.
+
+sqldiag 
