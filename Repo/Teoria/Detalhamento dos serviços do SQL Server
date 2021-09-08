@@ -1,0 +1,24 @@
+Detalhamento dos serviços do SQL Server
+
+SQL FULLText Filter 
+Text - Filestream - armazena arquivos à partir do 2008 o Filestream, é  a capacidade de armazenar qualquer tipo de arquivo no banco de dados.
+O serviço permite fazer buscar dentro do arquivo.
+
+SQL Server
+Engine Database.
+
+SQL Server Agent
+É o robo do banco de dados, nosso scheduler, automatizador, responsável pelos agendamentos.
+Um serviço por instancia.
+
+SQL Server Analysis Services 
+Ferramenta de BI, fazer Cubos.
+
+SQL Server Browser
+Responsável por responder as solicitações de Cliente.
+
+SQL Server Integration Services
+Serviço de ETL, transporte de dados.
+
+SQL Server Reporting Services
+Serviço de relatórios, disponibiliza relatórios na web, não tem necessidade de IIS.
