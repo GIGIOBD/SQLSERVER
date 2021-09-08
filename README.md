@@ -25,6 +25,6 @@ Este repositório era até então de uso pessoal e resolvi deixar público este 
 </div>
 
 <div align='center'>
-<p> Obrigada pela visita 😁</p>
+<p> Obrigado pela visita 😁</p>
   <img src="https://komarev.com/ghpvc/?username=gigiobd&color=blueviolet&label=profile+views" alt="gigiobd" />
 </div>
