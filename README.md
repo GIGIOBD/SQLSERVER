@@ -23,3 +23,8 @@ Este repositório era até então de uso pessoal e resolvi deixar público este 
   ![Snake animation](https://github.com/GIGIOBD/SQLSERVER/blob/output/github-contribution-grid-snake.svg)  
  
 </div>
+
+<div align='center'>
+<p> Obrigada pela visita 😁</p>
+  <img src="https://komarev.com/ghpvc/?username=gigiobd&color=blueviolet&label=profile+views" alt="gigiobd" />
+</div>
