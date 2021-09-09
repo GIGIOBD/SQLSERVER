@@ -1,6 +1,6 @@
 Entendendo ACID
 
-ACID é a forma com que os bancos de dados lidam com suas transações SQL
+ACID é a forma que os bancos de dados lidam com suas transações SQL;
 Apenas bancos de dados estruturados trabalham com ACID.
 Conceito de BIGDATA por exemplo não trabalha com ACID.
 
@@ -9,27 +9,28 @@ A - Atomicidade
    
    BEGIN TRAN  --Inicia a transação;
     Exemplo insert de 1000 registros, todo o comando de insert é um ATOMO, ou ele funciona 100% ou falha 100%
-    caso de erro no insert do registro 550, falha 100%
+    Caso de erro no insert do registro 550, falha 100%;
     Atomo é uma particula indivisível naturalmente, este é o conceito de Atomicidade em banco de dados estruturados.
        
 C - Consistência
    Tem relação com a arquitetura do banco de dados, quando abrimos um transação, ele joga os dados no BUFFERCACHE, 
-   RAM com os dados da transação, quando eu commito os dados eu tenho os arquivos de LOG e DADOS.
+   já na memória RAM com os dados da transação, quando eu realizo o commit, eu tenho os dados nos arquivos de LOG e DADOS.
    
-   Os dados estão na memória e commitei, primeiro o SQL envia para o log e dpois ele envia para o arquivos de dados 
-   sendo apagado pouco a pouco. É um mecanismo chamado WAL Write Arred Log, ele da consistencia ao banco de dadados,
+   Os dados estão na memória e realizei o commit, primeiro o SQL envia para o arquivo de log e depois ele envia para o arquivos de dados, 
+   apagando pouco a pouco do arquivo de log. É um mecanismo chamado WAL Write Arred Log, ele da consistencia ao banco de dadados,
    trabalhando com uma redundancia dos dados, se acaba a luz por exemplo o meu banco continua consistente.
-   COnsitencia checka se esta tudo ok para enviar para o arquivo de dados.
+   Consitencia checka se esta tudo ok para enviar para o arquivo de dados.
    
 I - Isolamento
    Capacidade do banco gerenciar transações multiusuários.
-   Enra no conceito de lock de tabelas, por exemplo:
-   Usuario 1 esta realizando uma transação na tabela A.
-   Usuario 2 esta realizando uma transação na tabela A, mas o usuário 1 ainda não commitou.
-   A tabela A está isolada, permitindo apenas ao usuário 1.
-   Conceito de lock de registros e tabelas.
+   Entra no conceito de lock de tabelas, por exemplo:
+      Usuario 1 esta realizando uma transação na tabela A.
+      Usuario 2 esta realizando uma transação na tabela A, mas o usuário 1 ainda não commitou.
+      A tabela A está isolada, permitindo apenas ao usuário 1.   
       
 D - Durabilidade
    Salvar em estado permanente no banco de dados.
-   Exemplo, fazer insert com commit implicitdo, ou seja, sem begin tran.
-   Exemplo: Parar a instancia e iniciar novamente, os dados ainda estão disponíveis, isto é a durabilidade, salvos permanentemente.
+      Exemplo, fazer insert com commit implicitdo, ou seja, sem begin tran.
+      Exemplo: Parar a instancia e iniciar novamente, os dados ainda estão disponíveis, isto é a durabilidade, salvos permanentemente.
+      
+      
