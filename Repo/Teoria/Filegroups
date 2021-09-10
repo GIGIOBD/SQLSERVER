@@ -1,0 +1,27 @@
+/* Filegroups são containers lógicos de dados. Arquivos .ndf */
+
+Filegroups são containers lógicos de dados. Existe sempre um filegroup Primary por DB;
+
+Podemos criar filegroups adicionais;
+Arquivos de log não possuem filegroup;
+Temos apenas 1 arquivo .mdf por Banco de Dados;
+
+Os arquivos primários armazenam informações de inicialização do BD e apontam para outros arquivos do banco, 
+como por exemplo o log e os arquivos secundários, se esses existirem.
+
+Podemos criar mais FIlegroups, o que é recomendado para armazenar dados de usuário.
+
+Podemos dividir os Filegroups por Estado, usuário, departamento, temos total liberdade;
+
+Os arquivos mds ou ndf são formados por paginas de 8k, a cada 8 páginas temos 1 EXTENT 64k
+
+O SQL Server escolhe qual página ele vai gravar pelo algoritimo de Round Robin e Proporcionalidade.
+
+/* ZERO INITIALIZATION */
+É a capacidade de gravar 0 nas paginas para indicar que aquele espaço esta disponível, lógica utilizada pelo SQLServer para reservar o tamanho dos arquivos.
+
+
+/* Para verificar informações básicas sobre o Filegroup configurado no BD */
+
+DBCC SHOWFILESTATS
+--Fileid | FileGroup | TotalExtents | UsedExtents | Name | FileName
