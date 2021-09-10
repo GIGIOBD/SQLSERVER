@@ -1,4 +1,4 @@
-Detalhamento dos serviços do SQL Server
+Resumo dos serviços do SQL Server
 
 SQL FULLText Filter 
 Text - Filestream - armazena arquivos(Filestream) à partir da versão 2008, é  a capacidade de armazenar qualquer tipo de arquivo no banco de dados.
