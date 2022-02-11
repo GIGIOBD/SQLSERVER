@@ -1,7 +1,7 @@
 declare 
-	@db_id int		= null,
-	@object_id bigint	= 479496937,
-	@sql	varchar(max)
+	@db_id int		= null, --informar o id do banco de dados
+	@object_id bigint	= null  --informar o object_id, caso queira retornar dados de uma tabela específica.
+	
 exec sp_executesql @stmt=N'
           select 					
 			gs.avg_user_impact ,
