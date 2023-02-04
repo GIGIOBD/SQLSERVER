@@ -1,0 +1,1 @@
+ SELECT SERVERPROPERTY('ErrorLogFileName') AS 'Error log file location' 
