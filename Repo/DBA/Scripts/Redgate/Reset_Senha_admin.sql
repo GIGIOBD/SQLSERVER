@@ -1,0 +1,1 @@
+DELETE FROM settings.UserAccount WHERE UserName = 'admin'
