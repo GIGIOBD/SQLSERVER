@@ -1,45 +1,46 @@
-Install Virtual Box 
-Install Ubuntu Server
+1 - Install Virtual Box 
+https://www.virtualbox.org/wiki/Downloads
 
-/* enable ssh */
+2 - Install Ubuntu Server
+https://ubuntu.com/download/server?country=
+
+3 - /* enable ssh */
 sudo apt-get install openssh-server
 sudo service ssh status
 
 
-/*Verificar atualizações*/
+4 - /*Verificar atualizações*/
 sudo apt update
 
-/*Next, install a few prerequisite packages which let apt use packages over HTTPS:*/
+5 - /*Next, install a few prerequisite packages which let apt use packages over HTTPS:*/
 sudo apt install apt-transport-https ca-certificates curl software-properties-common
 
-/*Then add the GPG key for the official Docker repository to your system:*/
+6 - /*Then add the GPG key for the official Docker repository to your system:*/
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 
-/*Add the Docker repository to APT sources:*/
+7 - /*Add the Docker repository to APT sources:*/
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
 
-/*This will also update our package database with the Docker packages from the newly added repo.
+8 - /*This will also update our package database with the Docker packages from the newly added repo.
 Make sure you are about to install from the Docker repo instead of the default Ubuntu repo:*/
 apt-cache policy docker-ce
 
-/*Finally, install Docker:*/
+9 - /*Finally, install Docker:*/
 sudo apt install docker-ce
 
-/*Check that it’s running:*/
+10 - /*Check that it’s running:*/
 sudo systemctl status docker
 
-
-/*Pull Container SQL Server*/
+11 - /*Pull Container SQL Server*/
 sudo docker pull mcr.microsoft.com/mssql/server:2022-latest
 
-/* Install SQL Server */
+12 - /* Install SQL Server */
 sudo docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=G10v4nn1dba" \
    -p 1433:1433 --name sql1 --hostname sql1 \
    --rm \
    mcr.microsoft.com/mssql/server:2022-latest
 
-
-/* check Container */
+13 - /* check Container */
 docker ps -a
 
 
