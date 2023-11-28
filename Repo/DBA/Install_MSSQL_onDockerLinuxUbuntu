@@ -1,6 +1,7 @@
-/*Configurar acesso remoto*/
-Placa de rede no modo Bridge
+Install Virtual Box 
+Install Ubuntu Server
 
+/* enable ssh */
 sudo apt-get install openssh-server
 sudo service ssh status
 
@@ -38,7 +39,7 @@ sudo docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=G10v4nn1dba" \
    mcr.microsoft.com/mssql/server:2022-latest
 
 
-/* Verificar Container */
+/* check Container */
 docker ps -a
 
 
